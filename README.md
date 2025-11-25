@@ -1,21 +1,32 @@
-# Blazor.Diagrams
+# Blazor.Diagrams - .NET 10 Fork
+
+> **⚠️ This is a fork of [Blazor-Diagrams/Blazor.Diagrams](https://github.com/Blazor-Diagrams/Blazor.Diagrams)**
+>
+> **Purpose:** This fork adds .NET 10 static web assets support. The sole purpose is to ensure compatibility with .NET 10's new static asset system introduced in ASP.NET Core 10.0.
+>
+> **Key Changes:**
+> - Added `StaticWebAssetBasePath` configuration for proper asset resolution in .NET 10
+> - Package published as `ModelingEvolution.Blazor.Diagrams` on NuGet.org
+> - Maintains backward compatibility with static asset paths (`_content/Z.Blazor.Diagrams`)
+>
+> **Upstream:** For the original library and full documentation, visit [blazor-diagrams.zhaytam.com](https://blazor-diagrams.zhaytam.com/)
 
 ![](ZBD.png)
 
-Z.Blazor.Diagrams is a fully customizable and extensible all-purpose diagrams library for Blazor (both Server Side and WASM). It was first inspired by the popular React library [react-diagrams](https://github.com/projectstorm/react-diagrams), but then evolved into something much bigger. ZBD can be used to make advanced diagrams with a custom design. Even the behavior of the library is "hackable" and can be changed to suit your needs. 
+Blazor.Diagrams is a fully customizable and extensible all-purpose diagrams library for Blazor (both Server Side and WASM). It was first inspired by the popular React library [react-diagrams](https://github.com/projectstorm/react-diagrams), but then evolved into something much bigger. It can be used to make advanced diagrams with a custom design. Even the behavior of the library is "hackable" and can be changed to suit your needs.
 
-| NuGet Package                | Version                                                                                                                                  | Download                                                                                                                                  |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Z.Blazor.Diagrams.Core       | [![NuGet](https://img.shields.io/nuget/v/Z.Blazor.Diagrams.Core.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams.Core)             | [![Nuget](https://img.shields.io/nuget/dt/Z.Blazor.Diagrams.Core.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams.Core)             |
-| Z.Blazor.Diagrams            | [![NuGet](https://img.shields.io/nuget/v/Z.Blazor.Diagrams.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams)                       | [![Nuget](https://img.shields.io/nuget/dt/Z.Blazor.Diagrams.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams)                       |
-| Z.Blazor.Diagrams.Algorithms | [![NuGet](https://img.shields.io/nuget/v/Z.Blazor.Diagrams.Algorithms.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams.Algorithms) | [![Nuget](https://img.shields.io/nuget/dt/Z.Blazor.Diagrams.Algorithms.svg)](https://www.nuget.org/packages/Z.Blazor.Diagrams.Algorithms) |
+| NuGet Package                               | Version                                                                                                                                                          | Download                                                                                                                                                          |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ModelingEvolution.Blazor.Diagrams.Core      | [![NuGet](https://img.shields.io/nuget/v/ModelingEvolution.Blazor.Diagrams.Core.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams.Core)             | [![Nuget](https://img.shields.io/nuget/dt/ModelingEvolution.Blazor.Diagrams.Core.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams.Core)             |
+| ModelingEvolution.Blazor.Diagrams           | [![NuGet](https://img.shields.io/nuget/v/ModelingEvolution.Blazor.Diagrams.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams)                       | [![Nuget](https://img.shields.io/nuget/dt/ModelingEvolution.Blazor.Diagrams.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams)                       |
+| ModelingEvolution.Blazor.Diagrams.Algorithms| [![NuGet](https://img.shields.io/nuget/v/ModelingEvolution.Blazor.Diagrams.Algorithms.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams.Algorithms) | [![Nuget](https://img.shields.io/nuget/dt/ModelingEvolution.Blazor.Diagrams.Algorithms.svg)](https://www.nuget.org/packages/ModelingEvolution.Blazor.Diagrams.Algorithms) |
 
 | Badges     |                                                                                                                                                    |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JavaScript | ![GitHub file size in bytes](https://img.shields.io/github/size/Blazor-Diagrams/Blazor.Diagrams/src/Blazor.Diagrams/wwwroot/script.min.js)         |
-| CSS        | ![GitHub file size in bytes](https://img.shields.io/github/size/Blazor-Diagrams/Blazor.Diagrams/src/Blazor.Diagrams/wwwroot/style.css)             |
-| Activity   | [![GitHub](https://img.shields.io/github/last-commit/Blazor-Diagrams/Blazor.Diagrams/develop)](https://github.com/Blazor-Diagrams/Blazor.Diagrams) |
-| License    | [![GitHub](https://img.shields.io/github/license/Blazor-Diagrams/Blazor.Diagrams.svg)](https://github.com/Blazor-Diagrams/Blazor.Diagrams)         |
+| JavaScript | ![GitHub file size in bytes](https://img.shields.io/github/size/modelingevolution/Blazor.Diagrams/src/Blazor.Diagrams/wwwroot/script.min.js)         |
+| CSS        | ![GitHub file size in bytes](https://img.shields.io/github/size/modelingevolution/Blazor.Diagrams/src/Blazor.Diagrams/wwwroot/style.css)             |
+| Activity   | [![GitHub](https://img.shields.io/github/last-commit/modelingevolution/Blazor.Diagrams/develop)](https://github.com/modelingevolution/Blazor.Diagrams) |
+| License    | [![GitHub](https://img.shields.io/github/license/modelingevolution/Blazor.Diagrams.svg)](https://github.com/modelingevolution/Blazor.Diagrams)         |
 
 ## Mindset/Goals
 
