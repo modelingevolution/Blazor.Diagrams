@@ -9,9 +9,9 @@
     <FileVersion>3.0.3</FileVersion>
     <RepositoryUrl>https://github.com/Blazor-Diagrams/Blazor.Diagrams</RepositoryUrl>
     <Version>3.0.3</Version>
-    <PackageId>Z.Blazor.Diagrams.Core</PackageId>
+    <PackageId>ModelingEvolution.Blazor.Diagrams.Core</PackageId>
     <PackageTags>blazor diagrams diagramming svg drag</PackageTags>
-    <Product>Z.Blazor.Diagrams.Core</Product>
+    <Product>ModelingEvolution.Blazor.Diagrams.Core</Product>
     <PackageIcon>ZBD.png</PackageIcon>
     <PackageProjectUrl>https://blazor-diagrams.zhaytam.com/</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
