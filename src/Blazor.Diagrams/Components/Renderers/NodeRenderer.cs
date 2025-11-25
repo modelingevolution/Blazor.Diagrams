@@ -12,7 +12,7 @@ using Microsoft.JSInterop;
 
 namespace Blazor.Diagrams.Components.Renderers;
 
-public class NodeRenderer : ComponentBase, IDisposable
+public class NodeRenderer : ComponentBase, IAsyncDisposable
 {
     private bool _becameVisible;
     private ElementReference _element;
@@ -26,14 +26,21 @@ public class NodeRenderer : ComponentBase, IDisposable
 
     [Inject] private IJSRuntime JsRuntime { get; set; } = null!;
 
-    public void Dispose()
+    public async ValueTask DisposeAsync()
     {
         Node.Changed -= OnNodeChanged;
         Node.VisibilityChanged -= OnVisibilityChanged;
 
         if (_element.Id != null && !Node.ControlledSize)
         {
-            _ = JsRuntime.UnobserveResizes(_element);
+            try
+            {
+                await JsRuntime.UnobserveResizes(_element);
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit already disconnected, ignore
+            }
         }
 
         _reference?.Dispose();

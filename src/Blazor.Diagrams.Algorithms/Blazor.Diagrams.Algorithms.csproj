@@ -5,10 +5,10 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>zHaytam</Authors>
     <Description>Algorithms for ModelingEvolution.Blazor.Diagrams</Description>
-    <AssemblyVersion>3.0.3</AssemblyVersion>
-    <FileVersion>3.0.3</FileVersion>
+    <AssemblyVersion>3.0.6</AssemblyVersion>
+    <FileVersion>3.0.6</FileVersion>
     <RepositoryUrl>https://github.com/modelingevolution/Blazor.Diagrams</RepositoryUrl>
-    <Version>3.0.3</Version>
+    <Version>3.0.6</Version>
     <PackageId>ModelingEvolution.Blazor.Diagrams.Algorithms</PackageId>
     <PackageTags>blazor diagrams diagramming svg drag algorithms layouts</PackageTags>
     <Product>ModelingEvolution.Blazor.Diagrams.Algorithms</Product>
